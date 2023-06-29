@@ -11,7 +11,7 @@ export default function TransactionForm() {
     addTransaction({
       id: crypto.randomUUID(),
       description,
-      amount,
+      amount: +amount,
     })
   }
 
