@@ -1,6 +1,7 @@
 import Balance from "./components/Balance"
 import Header from "./components/Header"
-import TransactionForm from "./components/TransactionForm"
+import TransactionForm from "./components/transactions/TransactionForm"
+import TransactionList from "./components/transactions/TransactionList"
 import { GlobalProvider } from "./context/GlobalContext"
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Header />
       <Balance />
       <TransactionForm />
+      <TransactionList />
     </GlobalProvider>
   )
 }
