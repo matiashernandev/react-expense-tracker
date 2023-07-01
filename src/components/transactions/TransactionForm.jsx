@@ -13,6 +13,9 @@ export default function TransactionForm() {
       description,
       amount: +amount,
     })
+
+    setAmount(0)
+    setDescription("")
   }
 
   return (
@@ -23,6 +26,7 @@ export default function TransactionForm() {
           type="text"
           placeholder="Enter description"
           className="bg-zinc-600  px-3 py-2 rounded-lg block mb-2 w-full"
+          value={description}
         />
         <input
           onChange={(e) => setAmount(e.target.value)}
@@ -30,6 +34,7 @@ export default function TransactionForm() {
           step={0.01}
           placeholder="00.00"
           className="bg-zinc-600  px-3 py-2 rounded-lg block mb-2 w-full"
+          value={amount}
         />
         <button className="bg-indigo-700 py-2 px-3 w-full rounded-lg">
           Add Transaction
