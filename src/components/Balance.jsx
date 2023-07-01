@@ -8,9 +8,9 @@ export default function Balance() {
   const total = amounts.reduce((acc, item) => (acc += item), 0)
 
   return (
-    <div>
-      <h3>Your Balance</h3>
-      <h1>${total}</h1>
+    <div className="flex justify-between">
+      <h3 className="">Your Balance</h3>
+      <h1 className="text-2xl font-bold">${total}</h1>
     </div>
   )
 }

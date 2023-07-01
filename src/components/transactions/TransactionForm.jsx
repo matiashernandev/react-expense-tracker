@@ -22,14 +22,18 @@ export default function TransactionForm() {
           onChange={(e) => setDescription(e.target.value)}
           type="text"
           placeholder="Enter description"
+          className="bg-zinc-600  px-3 py-2 rounded-lg block mb-2 w-full"
         />
         <input
           onChange={(e) => setAmount(e.target.value)}
           type="number"
           step={0.01}
           placeholder="00.00"
+          className="bg-zinc-600  px-3 py-2 rounded-lg block mb-2 w-full"
         />
-        <button>Add Transaction</button>
+        <button className="bg-indigo-700 py-2 px-3 w-full rounded-lg">
+          Add Transaction
+        </button>
       </form>
     </div>
   )
